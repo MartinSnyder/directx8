@@ -1,4 +1,7 @@
 
+// NOTE: This file conflicts with the Windows SDK control.h (10.0.26100.0+)
+// The Windows SDK version should be used instead. This entire file is commented out.
+#if 0
 #pragma warning( disable: 4049 )  /* more than 64k source lines */
 
 /* this ALWAYS GENERATED file contains the definitions for the interfaces */
@@ -5535,5 +5538,7 @@ void __RPC_STUB IAMStats_AddValue_Stub(
 #endif
 
 #endif
+
+#endif // #if 0 - File commented out due to conflict with Windows SDK control.h
 
 
