@@ -6,7 +6,9 @@
 // Copyright (c) 1992 - 2000, Microsoft Corporation.  All rights reserved.
 //------------------------------------------------------------------------------
 
-
+// NOTE: This file conflicts with the Windows SDK errors.h (10.0.26100.0+)
+// The Windows SDK version should be used instead. This entire file is commented out.
+#if 0
 #ifndef __ERRORS__
 #define __ERRORS__
 
@@ -45,3 +47,4 @@ typedef AMGETERRORTEXTPROCA AMGETERRORTEXTPROC;
 }
 #endif // __cplusplus
 #endif // __ERRORS__
+#endif // #if 0 - File commented out due to conflict with Windows SDK errors.h

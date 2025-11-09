@@ -18,6 +18,9 @@ Revision History:
 
 --*/
 
+// NOTE: This file conflicts with the Windows SDK basetsd.h (10.0.26100.0+)
+// The Windows SDK version should be used instead. This entire file is commented out.
+#if 0
 #ifndef _BASETSD_H_
 #define _BASETSD_H_
 
@@ -340,3 +343,4 @@ typedef KAFFINITY *PKAFFINITY;
 #endif
 
 #endif // _BASETSD_H_
+#endif // #if 0 - File commented out due to conflict with Windows SDK basetsd.h

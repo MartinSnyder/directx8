@@ -14,6 +14,9 @@
 //
 //=============================================================================
 
+// NOTE: This file conflicts with the Windows SDK MultiMon.h (10.0.26100.0+)
+// The Windows SDK version should be used instead. This entire file is commented out.
+#if 0
 #ifdef __cplusplus
 extern "C" {            // Assume C declarations for C++
 #endif // __cplusplus
@@ -481,4 +484,5 @@ extern BOOL WINAPI xEnumDisplayDevices(PVOID, DWORD, PDISPLAY_DEVICE, DWORD);
 #ifdef __cplusplus
 }
 #endif  // __cplusplus
+#endif // #if 0 - File commented out due to conflict with Windows SDK MultiMon.h
 
